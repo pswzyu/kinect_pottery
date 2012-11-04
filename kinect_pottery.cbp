@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="kinect_pottery" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/kinect_pottery" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="/home/pswz-zhangy/devel/OpenNI-Bin-Dev-Linux-x64-v1.5.4.0/Include" />
+					<Add directory="/home/pswz-zhangy/devel/NITE-Bin-Dev-Linux-x64-v1.5.2.21/Include" />
+					<Add directory="/home/pswz-zhangy/devel/boost_1_49_0" />
+					<Add directory="/home/pswz-zhangy/devel/boost_1_49_0/boost" />
+				</Compiler>
+				<Linker>
+					<Add library="OpenNI" />
+					<Add library="XnVNite_1_5_2" />
+					<Add library="boost_thread" />
+					<Add library="glut" />
+					<Add library="GLU" />
+					<Add library="GL" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/kinect_pottery" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Bitmap.cpp" />
+		<Unit filename="Bitmap.h" />
+		<Unit filename="DataProcesser.cpp" />
+		<Unit filename="DataProcesser.h" />
+		<Unit filename="Drawer.cpp" />
+		<Unit filename="Drawer.h" />
+		<Unit filename="KPPoint.cpp" />
+		<Unit filename="KPPoint.h" />
+		<Unit filename="Piece.cpp" />
+		<Unit filename="Piece.h" />
+		<Unit filename="Settings.cpp" />
+		<Unit filename="Settings.h" />
+		<Unit filename="ShareGL.cpp" />
+		<Unit filename="ShareGL.h" />
+		<Unit filename="ShareNUI.cpp" />
+		<Unit filename="ShareNUI.h" />
+		<Unit filename="def.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="manager.cpp" />
+		<Unit filename="manager.h" />
+		<Unit filename="nuimanager.cpp" />
+		<Unit filename="nuimanager.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
